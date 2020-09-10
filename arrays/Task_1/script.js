@@ -33,5 +33,39 @@ const sumOfNumbers = () => {
 
     document.getElementById('sumArray').innerHTML = sum;
 
+}
 
+const averageOfNumbers = () => {
+    const sum = numbers.reduce((a, b) => {
+        return a + b
+    }, 0);
+    const average = sum / numbers.length
+
+    document.getElementById('avgArray').innerHTML = average
+}
+
+const smallestNumber = () => {
+    const min = Math.min(...numbers)
+
+    document.getElementById('smallest').innerHTML = min
+}
+
+const userNumber = () => {
+    const userNumber = document.getElementById('number').value
+    const count = numbers.filter(x => x == userNumber).length;
+
+    document.getElementById('userNumber').innerHTML = count
+}
+
+const beforeZero = () => {
+    const firstNumbers = numbers.slice(0, 6)
+
+    document.getElementById('beforeZero').innerHTML = firstNumbers
+}
+
+const afterZero = () => {
+    const lastNumbers = numbers.slice(7, 10)
+    const lengthOfNumbers = lastNumbers.length
+
+    document.getElementById('afterZero').innerHTML = lengthOfNumbers + " numbers: " + lastNumbers
 }
