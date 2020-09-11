@@ -17,15 +17,11 @@ const oddNumbers = () => {
 
 const evenNumbers = () => {
     let i;
-    for (i = 2; i <= 100; i++) {
+    for (i = 2; i < 100; i++) {
         if ((i % 2) != 0) {
             continue;
         }
-        document.getElementById('evenNumbers').innerHTML += i + ' - ';
+        document.getElementById('evenNumbers').innerHTML += i + ' ';
     }
 }
 
-//Make a program that asks repeatedly from the user the distance (km) 
-//and time (h) and calculates average speed. 
-//The program ends when user gives 0 for the distance. 
-// (After getting 0, the program does not ask anything from the user.)

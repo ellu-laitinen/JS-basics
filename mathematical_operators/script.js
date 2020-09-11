@@ -52,7 +52,6 @@ const bmiCalc = () => {
     const weight = document.getElementById('weight').value
 
     const bmi = weight / (height * height)
-    let result = ""
 
     if (bmi < 18.5) {
         document.getElementById('result').innerHTML = bmi + " Underweight"
