@@ -2,11 +2,22 @@
 until user gives 0 and then program ends.
 In the end program prints out average of the numbers. */
 
-const numbers = []
+//const numbers = []
+// const number = document.getElementById
+let number = prompt('give  number')
 
+do {
+    prompt('give a number')
+    if (number === 0)
+        break;
 
-for (let i = undefined; i != 0; i++) {
-    numbers.push(prompt('give  number'));
 }
+while (!isNaN(number))
+
+
+
+console.log(number)
+
+
 
 /* alert('numbers: ' + numbers) */

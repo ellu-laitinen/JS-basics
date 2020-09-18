@@ -19,7 +19,7 @@ const getCars = () => {
     document.getElementById('cars').innerHTML = cars.licence + cars.maker + cars.model +
         cars.price + cars.color */
     cars.push(car)
-    document.getElementById('cars').innerHTML = cars
+    document.getElementById('cars').innerHTML = cars/*  car.licence + ", " + car.maker */
 
     console.log(cars)
 }

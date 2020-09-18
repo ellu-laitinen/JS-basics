@@ -4,7 +4,7 @@
 let numbers = [];
 
 for (let i = 0; i < 8; i++) {
-    numbers.push(prompt('give a number'))
+    +numbers.push(prompt('give a number'))
 }
 
 let sum = numbers.reduce((a, b) => a + b, 0)
